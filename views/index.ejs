@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <title>Fewlist</title>
+</head>
+
+<body>
+  <div class="form">
+    <form action="/create" method="post">
+      <input class="text_field" type="text" name="title" placeholder="Take title goes here..">
+      <textarea class="desc_field" name="description" placeholder="Task description goes here.."></textarea>
+      <button class="add_btn">Add Task<i class='bx bx-task' ></i></button>
+    </form>
+    
+    <% if(files.length > 0) { %>
+      <div class="tasks">
+        <% files.forEach((file) =>{ %>
+          <div class="task">
+            <h1><%= file %></h1>
+            <div>
+              <a href="/show/<%= file %>"><i class='bx bx-subdirectory-right'></i></a>
+              <a href="/update/<%= file %>"><i class='bx bxs-edit-alt' ></i></a>
+              <a class="deleteBtn" href="/delete/<%= file %>"><i class='bx bx-trash' ></i></a>
+            </div>
+          </div>
+        <% }) %>
+      </div>
+    <% } else {%>
+       <p>No Task Available...</p>
+    <% } %>
+  </div>
+
+
+</body>
+</html>

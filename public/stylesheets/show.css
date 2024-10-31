@@ -1,0 +1,57 @@
+@font-face {
+  font-family: coldesac;
+  src: url(/fonts/coldesac-coldesac-regular-400.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: coldesac;
+  background: #2F2F2F;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.output {
+  width: 80%;
+  height: 100%;
+  color: #fff;
+  margin: 40px 25px;
+}
+
+.output a {
+  text-decoration: none;
+  color: #F0F0F0;
+  font-size: 30px;
+}
+
+.output .title {
+  font-size: 25px;
+  margin-top: 40px;
+  margin-left: 10px;
+  color: #fff;
+}
+
+.output .data {
+  width: 100%;
+  height: 500px;
+  font-size: 15px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+
+.output .data::-webkit-scrollbar {
+  width: 0;
+}

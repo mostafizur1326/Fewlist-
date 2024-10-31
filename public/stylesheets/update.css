@@ -1,0 +1,88 @@
+@font-face {
+  font-family: coldesac;
+  src: url(/fonts/coldesac-coldesac-regular-400.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: coldesac;
+  background: #2F2F2F;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.update {
+  width: 80%;
+  height: 100%;
+  color: #fff;
+  margin: 40px 25px;
+}
+
+.update form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.update a {
+  text-decoration: none;
+  color: #F0F0F0;
+  font-size: 30px;
+}
+
+.update .update_title {
+  height: 53px;
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 10px;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.update .update_description {
+  height: 500px;
+  font-size: 15px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+
+.update .update_description::-webkit-scrollbar {
+  width: 0;
+}
+
+button {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 25px;
+  background: #FFB04B;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.update form button i {
+  background-color: transparent;
+  margin-left: 5px;
+}

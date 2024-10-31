@@ -1,0 +1,140 @@
+@font-face {
+  font-family: coldesac;
+  src: url(/fonts/coldesac-coldesac-regular-400.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: coldesac;
+  background: #2F2F2F;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  width: 95%;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto;
+  padding: 50px;
+}
+
+.text_field {
+  min-height: 50px;
+  font-size: 14px;
+  padding-left: 10px;
+  background: #000;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.desc_field {
+  min-height: 70px;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-left: 10px;
+  background: #000;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+
+.add_btn {
+  height: 40px;
+  background: #73B5FF;
+  color: #fff;
+  outline: none;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+}
+
+.tasks {
+  width: 100%;
+  height: 50vh;
+  overflow-y: scroll;
+  color: #fff;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.task {
+  position: relative;
+  width: 140px;
+  min-height: 80px;
+  max-height: 150px;
+  background: #000;
+  border-radius: 10px;
+  padding: 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task h1 {
+  font-size: 18px;
+  background: #000;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.task div {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 15px;
+  background: transparent;
+}
+
+.task a {
+  font-size: 12px;
+  text-decoration: none;
+  background: #000;
+  cursor: pointer;
+}
+
+.bx-subdirectory-right {
+  color: #929AF8;
+}
+
+.bxs-edit-alt {
+  color: #FFB04B;
+}
+
+.bx-trash {
+  color: #F89292;
+}
+
+i {
+  background: transparent;
+}
+
+p {
+  font-size: 10px;
+  color: #727272;
+  margin-left: 20px;
+}

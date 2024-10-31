@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/stylesheets/update.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+  <title>Update</title>
+</head>
+
+<body>
+ <div class="update">
+   <a href="/"><i class='bx bxs-left-arrow-circle'></i></a>
+   <form action="/update" method="post">
+     <input type="text" name="update_title" placeholder="Title" class="update_title" value="<%= title %>">
+     <textarea class="update_description" id="textarea" name="update_description" placeholder="Note"><%= data %></textarea>
+     <button>Update<i class='bx bxs-edit-alt'></i></button>
+   </form>
+ </div>
+ 
+ <script src="/javascripts/script.js"></script>
+</body>
+</html>
